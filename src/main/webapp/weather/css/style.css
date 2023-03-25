@@ -1,0 +1,221 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+
+/*-- main --*/
+.main h1{
+	text-transform:capitalize;
+	font-size:2em;
+	color:#fff;
+	text-align:center;
+	margin:0 0 2em;
+	letter-spacing: 2px;
+}
+.main{
+	padding:4em 0 3em;
+	width:35%;
+	margin:0 auto;
+}
+.main-grid1{
+	position:relative;
+	background:#fff;
+}
+.main-grid1-pos span{
+	background:url(../images/1.png) no-repeat 0px 0px;
+	display:block;
+	height:181px;
+	width:200px;
+	position:absolute;
+	top:-32%;
+    left: -3%;
+}
+.main-grid1 h2{
+	font-size: 4em;
+    color: #FFD61C;
+    margin: 0;
+    text-align: center;
+}
+.main-grid1 h2 span{
+	font-size: .5em;
+    color: #DBDADA;
+}
+.main-grid1 p{
+	margin: 0;
+    color: #D1D1D1;
+	font-size:1.5em;
+	text-align: center;
+}
+.main-grid1-grid-left{
+	float:left;
+}
+.main-grid1-grid-left p{
+	font-size:1em;
+	color:#999;
+	margin:0;
+	text-align: left;
+}
+.main-grid1-grid-left h3{
+	color:#999;
+	font-size:1em;
+	margin:0;
+	text-align: left;
+}
+.main-grid1-grid-right{
+	float:right;
+}
+.main-grid1-grid-right p{
+	color:#999;
+	font-size:1em;
+	margin:0;
+	text-align: right;
+}
+.main-grid1-grid-right p span{	
+	display:block;
+	font-size:2.5em;
+}
+.main-grid1-grids {
+    padding:0 2em 2em;
+}
+.main-grid2{
+	padding:1.5em;
+	background:#3891DD;
+}
+.main-grid2-left{
+	float:left;
+	width:25%;
+	text-align:center;
+}
+.main-grid2-left p{
+	color:#fff;
+	font-size:1em;
+	margin:0;
+}
+.main-grid2-left p span{
+	display:block;
+}
+.footer{
+	padding:4em 0 0;
+	text-align:center;
+}
+.footer p{
+	color:#fff;
+	font-size:14px;
+	margin:0;
+	line-height:2.8em;
+}
+.footer p a{
+	text-decoration:none;
+	color:#fff;
+	padding:.3em 0 0;
+	border-top:1px solid #fff;
+}
+/*-----start-responsive-design------*/
+@media (max-width:1440px){
+	.main-grid1-pos span {
+		background-size: 80%;
+		top: -24%;
+	}
+}
+@media (max-width:1280px){
+	.main {
+		width: 40%;
+	}
+}
+@media (max-width:1024px){
+	.main-grid1 h2 {
+		font-size: 3em;
+	}
+	.main {
+		width: 50%;
+	}
+}
+@media (max-width: 768px){
+	.main {
+		width: 70%;
+	}
+}
+@media (max-width: 667px){
+	.main-grid1 p {
+		font-size: 1.2em;
+	}
+}
+@media (max-width: 640px){
+	.footer {
+		padding: 2em 0 0;
+	}
+}
+@media (max-width:480px){
+	.main {
+		width: 90%;
+	}
+	.main-grid1-pos span {
+		background-size: 67%;
+		top: -27%;
+	}
+	.main-grid1 h2 {
+		font-size: 2.7em;
+	}
+	.main-grid1-grid-right p span {
+		font-size: 2em;
+	}
+	.main-grid1 p {
+		font-size: 1em;
+	}
+}
+@media (max-width:384px){
+	.main h1 {
+		font-size: 1.5em;
+	}
+}
+@media (max-width:320px){
+	.main-grid1-pos span {
+		background-size: 95%;
+		top: -18%;
+		height: 100px;
+		width: 100px;
+	}
+	.main-grid1-grid-left,.main-grid1-grid-right {
+		float: none;
+	}
+	.main {
+		padding: 2em 0 2em;
+	}
+	.main-grid1 h2 {
+		font-size: 2em;
+	}
+	.main-grid2-left {
+		width: 50%;
+	}
+	.footer {
+		padding: 1em 0 0;
+	}
+	.footer p{
+		font-size:13px;
+	}
+}
